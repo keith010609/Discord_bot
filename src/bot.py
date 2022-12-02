@@ -9,8 +9,8 @@ async def send_msg(msg, user_msg):
     except Exception as e:
         print(e)
 
-def run_bot():
-    TOKEN = 'NjUxMzU3ODY0NTM0OTk5MDUx.Gm3uWN.hE9ssHlhNOgMitVngkuQPIet2L3xhZK0ckdLPA'
+def run_bot(token):
+    TOKEN = token
     intents = discord.Intents.all()
     intents.message_content = True
     bot = commands.Bot(command_prefix = ">",intents = intents, help_command = None)
